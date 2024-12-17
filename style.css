@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Bodoni-moda", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('assets/image/imgs.jpeg'); 
+    background-size: cover;
+    background-position: center;
+
+
+    padding: 0;
+    margin: 0;
+}
+.container-judul  {
+    background-color: rgba(255, 255, 255, 0.719);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    font-family: "Bodoni-moda", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: black;;
+}
+
+.phead {
+    text-align: center;
+}
+
+h2   {
+    color: midnightblue;
+}
+
+nav{
+    background-color:rgba(245, 222, 179, 0.853);
+    padding: 2px;
+
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    padding-inline: 4rem;
+
+    gap: 2rem;
+    
+}
+nav li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 20px;
+    font-weight: 999;
+}
+
+li a:hover, .dropdown:hover
+.dropbtn {
+    color: rgb(0, 0, 0);
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop-content a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+}
+
+.drop-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
+header .container-judul {
+    
+}
+header {
+    display: inline;
+}
+main {
+    padding: 20px;
+    
+    display: flex;
+    gap: 1rem;
+}
+
+.content-utama {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+aside {
+    flex: 4;
+}
+
+
+.img-featured {
+    max-height: 15rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-img {
+ 
+}
+
+.text{
+    flex: 1;
+    border: #f1f1f1 solid;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: rgba(245, 222, 179, 0.853);
+
+    padding: 12px;
+    margin: 0;
+}
+
+footer {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.719);
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+}
+section {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem;
+    border: 3px solid beige;
+    border-bottom: 0;
+}
+.checked {
+    color: orange;
+}
+
+.aside{
+    text-align: center;
+}
+table,td {
+    border: 2px solid;
+    text-align: left;
+}
+table th {
+    text-align: right;
+}
+table {
+    border-collapse: collapse;
+    display: inline-flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-utama, aside {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+
+    main {
+    flex-flow: column nowrap;
+    }
+    main aside {
+    align-self: center;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+      
+}
+
+
